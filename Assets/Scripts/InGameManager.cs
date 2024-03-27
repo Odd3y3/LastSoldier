@@ -93,6 +93,7 @@ public class InGameManager : MonoBehaviour
     public void OpenTutorialPopup()
     {
         GameManager.inst.uiManager.tutorialPopupWindow.SetActive(true);
+        GameManager.inst.uiManager.IsCursorLock = false;
         StopTime(true);
     }
 

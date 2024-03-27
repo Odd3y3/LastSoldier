@@ -317,6 +317,34 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Debug"",
+            ""id"": ""33530711-cf00-4439-9936-e1058ba6f49c"",
+            ""actions"": [
+                {
+                    ""name"": ""PlayerData"",
+                    ""type"": ""Button"",
+                    ""id"": ""fba2d634-d20a-4493-9e5b-834dcb85a8cd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""3a7f383b-05e1-4837-90f1-f8b20458e480"",
+                    ""path"": ""<Keyboard>/f12"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""PC"",
+                    ""action"": ""PlayerData"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -351,6 +379,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_UI_Inventory = m_UI.FindAction("Inventory", throwIfNotFound: true);
         m_UI_UnlockCursor = m_UI.FindAction("UnlockCursor", throwIfNotFound: true);
         m_UI_EscMenu = m_UI.FindAction("EscMenu", throwIfNotFound: true);
+        // Debug
+        m_Debug = asset.FindActionMap("Debug", throwIfNotFound: true);
+        m_Debug_PlayerData = m_Debug.FindAction("PlayerData", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -556,6 +587,52 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
+
+    // Debug
+    private readonly InputActionMap m_Debug;
+    private List<IDebugActions> m_DebugActionsCallbackInterfaces = new List<IDebugActions>();
+    private readonly InputAction m_Debug_PlayerData;
+    public struct DebugActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public DebugActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @PlayerData => m_Wrapper.m_Debug_PlayerData;
+        public InputActionMap Get() { return m_Wrapper.m_Debug; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(DebugActions set) { return set.Get(); }
+        public void AddCallbacks(IDebugActions instance)
+        {
+            if (instance == null || m_Wrapper.m_DebugActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_DebugActionsCallbackInterfaces.Add(instance);
+            @PlayerData.started += instance.OnPlayerData;
+            @PlayerData.performed += instance.OnPlayerData;
+            @PlayerData.canceled += instance.OnPlayerData;
+        }
+
+        private void UnregisterCallbacks(IDebugActions instance)
+        {
+            @PlayerData.started -= instance.OnPlayerData;
+            @PlayerData.performed -= instance.OnPlayerData;
+            @PlayerData.canceled -= instance.OnPlayerData;
+        }
+
+        public void RemoveCallbacks(IDebugActions instance)
+        {
+            if (m_Wrapper.m_DebugActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IDebugActions instance)
+        {
+            foreach (var item in m_Wrapper.m_DebugActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_DebugActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public DebugActions @Debug => new DebugActions(this);
     private int m_PCSchemeIndex = -1;
     public InputControlScheme PCScheme
     {
@@ -579,5 +656,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnInventory(InputAction.CallbackContext context);
         void OnUnlockCursor(InputAction.CallbackContext context);
         void OnEscMenu(InputAction.CallbackContext context);
+    }
+    public interface IDebugActions
+    {
+        void OnPlayerData(InputAction.CallbackContext context);
     }
 }

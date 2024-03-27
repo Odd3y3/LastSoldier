@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc0a8949fc42a5445a5c96462e0d07de, type: 3}
-  m_Name: MpCost2
+  m_Name: MaxHp3
   m_EditorClassIdentifier: 
-  itemID: 13
-  icon: {fileID: 21300000, guid: 70c5560d90e68f340933c1afeb8ab953, type: 3}
-  grade: 3
-  itemName: "\uC5D0\uB108\uC9C0\uC18C\uBAA8\uB7C92"
-  itemDescription: "\uC5D0\uB108\uC9C0 \uC18C\uBAA8\uB7C9\uC774 50% \uAC10\uC18C\uD55C\uB2E4."
+  itemID: 16
+  icon: {fileID: 21300000, guid: a39fb8b6b9c9a614b94e92203f67ce0b, type: 3}
+  grade: 2
+  itemName: "\uCCB4\uB8253"
+  itemDescription: "\uCD5C\uB300\uCCB4\uB825 + 150"
   dmgAdd: 0
   dmgMul: 1
   movementSpeedMul: 1
   attackSpeedMul: 1
   zoomAttackSpeedMul: 1
-  maxHpAdd: 0
+  maxHpAdd: 150
   maxHpMul: 1
-  bulletMpCostMul: 0.5
+  bulletMpCostMul: 1
   regenMpMul: 1
   regenMpOverloadMul: 1

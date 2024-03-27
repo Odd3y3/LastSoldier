@@ -10,20 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc0a8949fc42a5445a5c96462e0d07de, type: 3}
-  m_Name: MpCost2
+  m_Name: AttackSpeed4
   m_EditorClassIdentifier: 
-  itemID: 13
-  icon: {fileID: 21300000, guid: 70c5560d90e68f340933c1afeb8ab953, type: 3}
+  itemID: 8
+  icon: {fileID: 21300000, guid: 4e8484c043d44f346b5ee7e15029043d, type: 3}
   grade: 3
-  itemName: "\uC5D0\uB108\uC9C0\uC18C\uBAA8\uB7C92"
-  itemDescription: "\uC5D0\uB108\uC9C0 \uC18C\uBAA8\uB7C9\uC774 50% \uAC10\uC18C\uD55C\uB2E4."
+  itemName: "\uACF5\uACA9\uC18D\uB3C44"
+  itemDescription: "\uC870\uC900 \uC0C1\uD0DC\uC5D0\uC11C\uC758 \uACF5\uACA9 \uC18D\uB3C4\uAC00
+    100% \uC99D\uAC00\uD558\uB294 \uB300\uC2E0,\n\uBE44\uC870\uC900 \uC0C1\uD0DC\uC5D0\uC11C\uC758
+    \uACF5\uACA9 \uC18D\uB3C4\uAC00 30% \uAC10\uC18C\uD55C\uB2E4."
   dmgAdd: 0
   dmgMul: 1
   movementSpeedMul: 1
-  attackSpeedMul: 1
-  zoomAttackSpeedMul: 1
+  attackSpeedMul: 0.7
+  zoomAttackSpeedMul: 2
   maxHpAdd: 0
   maxHpMul: 1
-  bulletMpCostMul: 0.5
+  bulletMpCostMul: 1
   regenMpMul: 1
   regenMpOverloadMul: 1

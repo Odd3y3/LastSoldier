@@ -15,12 +15,13 @@ MonoBehaviour:
   itemID: 2
   icon: {fileID: 21300000, guid: 57f1ef021cb4f5c4194b62f315ac3bd3, type: 3}
   grade: 1
-  itemName: Attack 2
+  itemName: "\uACF5\uACA92"
   itemDescription: "\uACF5\uACA9\uB825 + 60"
   dmgAdd: 60
   dmgMul: 1
   movementSpeedMul: 1
   attackSpeedMul: 1
+  zoomAttackSpeedMul: 1
   maxHpAdd: 0
   maxHpMul: 1
   bulletMpCostMul: 1

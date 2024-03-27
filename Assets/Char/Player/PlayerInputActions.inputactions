@@ -295,6 +295,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Debug",
+            "id": "33530711-cf00-4439-9936-e1058ba6f49c",
+            "actions": [
+                {
+                    "name": "PlayerData",
+                    "type": "Button",
+                    "id": "fba2d634-d20a-4493-9e5b-834dcb85a8cd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3a7f383b-05e1-4837-90f1-f8b20458e480",
+                    "path": "<Keyboard>/f12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "PlayerData",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

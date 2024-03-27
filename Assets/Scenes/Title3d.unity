@@ -3276,6 +3276,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7b997946179889545b632e9db6351c16, type: 2}
   - {fileID: 11400000, guid: b9c4c26b4c6435c4bb5f187a4b1eb075, type: 2}
   - {fileID: 11400000, guid: 7f4e2ae6083eba044bee24e76b0877cd, type: 2}
+  - {fileID: 11400000, guid: cff052f87a7cb6c40ad73fea681fe8fc, type: 2}
   - {fileID: 11400000, guid: 87d3cc4890546144891cd3858ac487ca, type: 2}
   - {fileID: 11400000, guid: d764c81762506b04ab36c9eb8cb5cd76, type: 2}
   - {fileID: 11400000, guid: dc6c15b4db1222b498738b57fe84a340, type: 2}
@@ -3283,6 +3284,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a52976c3be3aba3418e181431c006377, type: 2}
   - {fileID: 11400000, guid: d4acbf5927ea3324ba00c3fa88831585, type: 2}
   - {fileID: 11400000, guid: 0e319b7e0d22b834ab5fe1d1969421f5, type: 2}
+  - {fileID: 11400000, guid: d150e96a5ebe187459ce9d83611bc429, type: 2}
+  - {fileID: 11400000, guid: f7288525f527289428f200cb5fa9fbd6, type: 2}
   itemProb_Common: 30
   itemProb_Uncommon: 30
   itemProb_Rare: 20

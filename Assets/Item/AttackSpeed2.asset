@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0a8949fc42a5445a5c96462e0d07de, type: 3}
   m_Name: AttackSpeed2
   m_EditorClassIdentifier: 
-  itemID: 5
+  itemID: 6
   icon: {fileID: 21300000, guid: 8a91eb4298ceaba40b5c2cac78823fed, type: 3}
   grade: 1
-  itemName: AttackSpeed2
+  itemName: "\uACF5\uACA9\uC18D\uB3C42"
   itemDescription: "\uACF5\uACA9\uC18D\uB3C4\uAC00 20% \uC99D\uAC00\uD55C\uB2E4."
   dmgAdd: 0
   dmgMul: 1
   movementSpeedMul: 1
   attackSpeedMul: 1.2
+  zoomAttackSpeedMul: 1.2
   maxHpAdd: 0
   maxHpMul: 1
+  bulletMpCostMul: 1
+  regenMpMul: 1
+  regenMpOverloadMul: 1

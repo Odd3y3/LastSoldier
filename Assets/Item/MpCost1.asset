@@ -12,15 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0a8949fc42a5445a5c96462e0d07de, type: 3}
   m_Name: MpCost1
   m_EditorClassIdentifier: 
-  itemID: 5
+  itemID: 12
   icon: {fileID: 21300000, guid: b8b9b0333092aec41ab6b260f54d10f7, type: 3}
   grade: 2
-  itemName: MpCost1
+  itemName: "\uC5D0\uB108\uC9C0\uC18C\uBAA8\uB7C91"
   itemDescription: "\uC5D0\uB108\uC9C0 \uC18C\uBAA8\uB7C9\uC774 20% \uAC10\uC18C\uD55C\uB2E4."
   dmgAdd: 0
   dmgMul: 1
   movementSpeedMul: 1
   attackSpeedMul: 1
+  zoomAttackSpeedMul: 1
   maxHpAdd: 0
   maxHpMul: 1
   bulletMpCostMul: 0.8
+  regenMpMul: 1
+  regenMpOverloadMul: 1
