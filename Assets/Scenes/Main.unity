@@ -26784,8 +26784,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26
-  m_fontSizeBase: 26
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -115925,6 +115925,10 @@ PrefabInstance:
       propertyPath: mpBarSlider
       value: 
       objectReference: {fileID: 183321457}
+    - target: {fileID: 663068434586183307, guid: 5172b66f21bbd724eb2c7283fef845fd, type: 3}
+      propertyPath: baseCharInfo.maxHp
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 663068434586183307, guid: 5172b66f21bbd724eb2c7283fef845fd, type: 3}
       propertyPath: startButtonMask.m_Bits
       value: 4096
