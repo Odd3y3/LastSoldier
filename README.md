@@ -1,4 +1,12 @@
 # LastSoldier
+### [스크린 샷]
+
+![스크린샷1](https://github.com/Odd3y3/LastSoldier/blob/main/ScreenShot1.jpg)
+
+![스크린샷1](https://github.com/Odd3y3/LastSoldier/blob/main/ScreenShot2.png)
+
+![스크린샷1](https://github.com/Odd3y3/LastSoldier/blob/main/ScreenShot3.png)
+
 ### [장르]
 
 3D 3인칭 슈팅게임 포트폴리오
