@@ -6,3 +6,7 @@
 
 [제작 기간]
   2023-11 ~ 2024-02 (3~4개월)
+
+
+[플레이 영상(링크)]
+https://www.youtube.com/watch?v=1yj7oFz0IMs
