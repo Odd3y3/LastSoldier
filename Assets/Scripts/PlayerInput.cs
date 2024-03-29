@@ -345,7 +345,6 @@ public class PlayerInput : PlayerInfo
             CurMp -= curBulletMpCost;
 
             //bullet spawn
-            //GameObject bullet = Instantiate(bulletPrefab);
             GameObject bullet = ObjectPool.inst.GetObject(bulletPrefab.name, bulletPrefab, GameManager.inst.inGameManager.particleRoot);
             bullet.transform.position = bulletSpawnPos.position;
 
