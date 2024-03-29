@@ -27,3 +27,8 @@ https://www.youtube.com/watch?v=1yj7oFz0IMs
 
 Unity Engine
 
+-----------
+
+### [플랫폼]
+
+PC
